@@ -40,6 +40,12 @@ p{
   text-transform: uppercase;
 }
 
+.menu a:hover{
+  background: rgb(255, 216, 164);
+  transform: scale(1.1);
+  transition: 300ms;
+}
+
 .conteudo{
   display: grid;
   grid-template-columns: 1fr 1fr;
