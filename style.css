@@ -81,6 +81,10 @@ p{
   text-transform: uppercase;
 }
 
+.botao:hover{
+  text-decoration: underline;
+}
+
 .subtitulo{
   font-size: 64px;
   text-transform: uppercase;
