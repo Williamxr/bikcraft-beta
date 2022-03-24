@@ -79,6 +79,17 @@ ul{
   font-size: 2rem;
 }
 
+.introducao::before{
+  content: "";
+  width: 60px;
+  height: 4px;
+  background: #e21;
+  display: inline-block;
+  position: absolute;
+  top: 30px;
+  right: -30px;
+}
+
 .detalhe{
   width: 60px;
   height: 4px;
@@ -122,6 +133,10 @@ ul{
   grid-template-columns: 40px 1fr;
   gap: 10px 20px;
   padding: 20px;
+}
+
+.vantagens-item:nth-child(odd){
+  background-color: #f7f7f7;
 }
 
 .vantagens-item:hover{
