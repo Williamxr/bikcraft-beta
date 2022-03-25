@@ -126,6 +126,7 @@ ul{
   padding: 40px;
   align-self: center;
   background-image: url("./img/onda.svg");
+  /*word-break: break-all; - quebra a palavra, porém nesse caso não seria a solução ideal*/
 }
 
 .vantagens{
@@ -158,4 +159,40 @@ footer{
   text-align: center;
   padding: 40px;
   box-sizing: border-box;
+}
+
+@media (max-width: 950px){
+  .conteudo-vantagens{
+    grid-template-columns: 1fr;
+  }
+  .subtitulo{
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px){
+  .conteudo{
+    grid-template-columns: 1fr;
+  }
+  body{
+    gap: 30px;
+    margin-top: 20px
+  }
+  header{
+    gap: 30px;
+  }
+  .conteudo-vantagens{
+    grid-template-columns: 1fr;
+  }
+  .subtitulo{
+    text-align: center;
+    font-size: 3rem;
+  }
+  .introducao{
+    text-align: left;
+    justify-items: start;
+  }
+  .introducao::before{
+    display: none;
+  }
 }
