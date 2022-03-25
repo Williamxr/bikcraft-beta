@@ -113,6 +113,11 @@ ul{
   background-color: #900;
 }
 
+.introducao-cover img{
+  object-fit: cover;
+  height: 100%;
+}
+
 .subtitulo{
   font-size: 4rem;
   text-transform: uppercase;
