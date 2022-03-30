@@ -4,9 +4,19 @@
   --fundo-1: #f7f7f7;
   --fundo-2: white;
   --texto: black;
+  --subtitulo: rgba(0, 0, 0, 0.2);
+  --onda: url("./img/onda-clara.svg");
 }
 
-
+@media (prefers-color-scheme: dark){
+  ::root{
+    --fundo-1: #111111;
+    --fundo-2: #000000;
+    --texto: #ffffff;
+    --subtitulo: rgba(255, 255, 255, 0.2);
+    --onda: url("./img/onda-escura.svg");
+  }
+}
 
 body{
   font-family: Arial, Helvetica, sans-serif;
@@ -132,11 +142,11 @@ ul{
 .subtitulo{
   font-size: 4rem;
   text-transform: uppercase;
-  color: rgba(0, 0, 0, 0.2);
+  color: var(--subtitulo);
   text-align: right;
   padding: 40px;
   align-self: center;
-  background-image: url("./img/onda.svg");
+  background-image: var(--onda);
   /*word-break: break-all; - quebra a palavra, porém nesse caso não seria a solução ideal*/
 }
 
