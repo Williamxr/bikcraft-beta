@@ -1,11 +1,22 @@
+:root{
+  --cor-primaria: #e21;
+  --cor-primaria-escura: #900;
+  --fundo-1: #f7f7f7;
+  --fundo-2: white;
+  --texto: black;
+}
+
+
+
 body{
   font-family: Arial, Helvetica, sans-serif;
   margin: 0px;
-  background: #f7f7f7;
+  background: var(--fundo-1);
   display: grid;
   gap: 60px;
   justify-items: center;
   margin-top: 60px;
+  color: var(--texto);
 }
 
 .header{
@@ -40,16 +51,16 @@ p{
 
 .menu a{
   display: block;
-  background: white;
+  background: var(--fundo-2);
   padding: 1rem 2rem;
   border-radius: 4px;
-  color: black;
+  color: var(--texto);
   text-transform: uppercase;
   border: 2px solid transparent;
 }
 
 .menu a:hover{
-  border-color: #e21;
+  border-color: var(--cor-primaria);
 }
 
 ul{
@@ -65,7 +76,7 @@ ul{
 }
 
 .introducao{
-  background: white;
+  background: var(--fundo-2);
   padding: 40px;
   text-align: right;
   position: relative;
@@ -83,7 +94,7 @@ ul{
   content: "";
   width: 60px;
   height: 4px;
-  background: #e21;
+  background: var(--cor-primaria);
   display: inline-block;
   position: absolute;
   top: 30px;
@@ -93,7 +104,7 @@ ul{
 .detalhe{
   width: 60px;
   height: 4px;
-  background: #e21;
+  background: var(--cor-primaria);
   display: inline-block;
   position: absolute;
   top: 30px;
@@ -101,8 +112,8 @@ ul{
 }
 
 .botao{
-  background: #e21;
-  color: white;
+  background: var(--cor-primaria);
+  color: var(--fundo-2);
   padding: 1rem 2rem;
   border-radius: 4px;
   text-transform: uppercase;
@@ -110,7 +121,7 @@ ul{
 
 .botao:hover{
   text-decoration: underline;
-  background-color: #900;
+  background-color: var(--cor-primaria-escura);
 }
 
 .introducao-cover img{
@@ -130,7 +141,7 @@ ul{
 }
 
 .vantagens{
-  background: white;
+  background: var(--fundo-2);
   padding: 40px;
 }
 
@@ -142,11 +153,11 @@ ul{
 }
 
 .vantagens-item:nth-child(odd){
-  background-color: #f7f7f7;
+  background-color: var(--fundo-1);
 }
 
 .vantagens-item:hover{
-  border-left: 4px solid #e21;
+  border-left: 4px solid var(--cor-primaria);
 }
 
 .vantagens-item p{
@@ -154,7 +165,7 @@ ul{
 }
 
 footer{
-  background: white;
+  background: var(--fundo-2);
   width: 100%;
   text-align: center;
   padding: 40px;
